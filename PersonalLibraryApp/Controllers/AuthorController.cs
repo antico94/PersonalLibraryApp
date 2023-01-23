@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TrainingEntity.Data;
@@ -10,10 +11,12 @@ namespace TrainingEntity.Controllers;
 public class AuthorController : ControllerBase
 {
     private readonly TrainingEntityContext _context;
+    private readonly IMapper _mapper;
 
-    public AuthorController(TrainingEntityContext context)
+    public AuthorController(TrainingEntityContext context, IMapper mapper)
     {
         _context = context;
+        _mapper = mapper;
     }
 
     // GET: api/Author

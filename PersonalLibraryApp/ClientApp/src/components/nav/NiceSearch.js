@@ -2,50 +2,44 @@ import {useEffect, useRef, useState} from 'react';
 import './search.css'
 
 const SearchInput = () => {
-  const searchInput = useRef(null);
   const [searchValue, setSearchValue] = useState("");
-  const [isFocused, setIsFocused] = useState(false);
+  const [searchResults, setSearchResults] = useState([]);
 
-  useEffect(() => {
-    console.log(searchValue);
-  }, [searchValue]);
-
-  function handleChange(event) {
-    setSearchValue(event.target.value);
-  }
-
-  function handleFocus() {
-    setIsFocused(true);
-  }
-
-  function handleBlur() {
-    setIsFocused(false);
+  async function handleSearch(event) {
+    event.preventDefault();
+    try {
+      // make requests to 3 APIs
+      const genreResponse = await fetch(`https://localhost:7082/api/Genre?search=${searchValue}`);
+      const authorResponse = await fetch(`https://localhost:7082/api/Author?search=${searchValue}`);
+      const bookResponse = await fetch(`https://localhost:7082/api/Book?search=${searchValue}`);
+      // parse responses as json
+      const genreData = await genreResponse.json();
+      const authorData = await authorResponse.json();
+      const bookData = await bookResponse.json();
+      // merge data from all 3 responses
+      const allData = [...genreData, ...authorData, ...bookData];
+      console.log(allData)
+      setSearchResults(allData);
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   return (
-    <div className="niceSearch">
-      <div className="niceSearch-inner">
-        <label
-          className={
-            searchValue.length > 0 || isFocused
-              ? "active"
-              : "search"
-          }
-          htmlFor="input_search"
-        >
-          <input
-            ref={searchInput}
-            id="input_search"
-            type="text"
-            onChange={handleChange}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
-          />
-        </label>
+    <form onSubmit={handleSearch}>
+      <input
+        type="text"
+        value={searchValue}
+        onChange={event => setSearchValue(event.target.value)}
+      />
+      <button type="submit">Search</button>
+      <div>
+        {searchResults.map((result, index) => (
+          <div key={index}>{result.name}</div>
+        ))}
       </div>
-    </div>
+    </form>
   );
-};
+}
 
-
-export default SearchInput
+export default SearchInput;

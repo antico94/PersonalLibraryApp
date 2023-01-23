@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TrainingEntity.Data;
@@ -10,10 +11,12 @@ namespace TrainingEntity.Controllers;
 public class BookController : ControllerBase
 {
     private readonly TrainingEntityContext _context;
+    private readonly IMapper _mapper;
 
-    public BookController(TrainingEntityContext context)
+    public BookController(TrainingEntityContext context, IMapper mapper)
     {
-        _context = context;
+        _context = context; 
+        _mapper = mapper;
     }
 
     // GET: api/Book
@@ -89,6 +92,18 @@ public class BookController : ControllerBase
 
         return NoContent();
     }
+    
+    //
+    // [HttpGet]
+    // public async Task<IActionResult> Get([FromQuery]string search)
+    // {
+    //     var books = await _context.SearchAsync(search);
+    //     if (books == null)
+    //         return NotFound();
+    //     return Ok(books);
+    // }
+    //
+    
 
     private bool BookExists(Guid id)
     {

@@ -7,7 +7,7 @@ builder.Services.AddDbContext<TrainingEntityContext>(options =>
                          throw new InvalidOperationException("Connection string 'TrainingEntityContext' not found.")));
 
 // Add services to the container.
-
+builder.Services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
@@ -20,6 +20,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+
 
 
 app.MapControllerRoute(

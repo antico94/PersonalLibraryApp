@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TrainingEntity.Data;
@@ -10,10 +11,12 @@ namespace TrainingEntity.Controllers;
 public class GenreController : ControllerBase
 {
     private readonly TrainingEntityContext _context;
+    private readonly IMapper _mapper;
 
-    public GenreController(TrainingEntityContext context)
+    public GenreController(TrainingEntityContext context, IMapper mapper)
     {
         _context = context;
+        _mapper = mapper;
     }
 
     // GET: api/Genre
