@@ -1,6 +1,15 @@
+.loginPage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    background-color: #ecf0f3;
+}
 
 
-/**/
 .main {
     position: relative;
     width: 1000px;
