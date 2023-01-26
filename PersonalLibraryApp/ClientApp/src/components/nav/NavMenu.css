@@ -28,7 +28,7 @@
     margin-left: 20px;
     width: 200px;
     margin-right: 50px;
-    /*border: 1px solid red;*/
+    cursor: pointer;
 }
 
 .header-menu {
@@ -50,15 +50,17 @@
     /*border: 1px solid red;*/
     display: flex;
     align-items: center;
-    margin-right: 20px;
     right: 0;
     position: absolute;
+    gap: 50px;
+    margin-right: 50px;
 }
 
 .header-icons svg {
     width: 20px;
     margin-left: 20px;
     fill: white;
+    cursor: pointer;
 }
 
 /* Hide menu-icon on screens larger than 600px */

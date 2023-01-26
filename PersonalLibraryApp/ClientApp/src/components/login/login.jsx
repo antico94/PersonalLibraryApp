@@ -4,7 +4,7 @@ import linkedin from './../../assets/svg/linkedin.svg';
 import twitter from './../../assets/svg/twitter.svg';
 import './login.css';
 
-const LoginPage = () => {
+const Login = () => {
   const switchCtn = useRef(null);
   const switchC1 = useRef(null);
   const switchC2 = useRef(null);
@@ -43,7 +43,7 @@ const LoginPage = () => {
   }, []);
 
   return (
-      <div className="loginPage">
+      <div className="login">
         <div className="main">
           <div className="container a-container" ref={aContainer}>
             <form className="form" id="a-form" method="" action="">
@@ -107,4 +107,4 @@ const LoginPage = () => {
         </div>
       </div>);
 };
-export default LoginPage;
+export default Login;

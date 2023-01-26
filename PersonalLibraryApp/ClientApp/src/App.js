@@ -2,6 +2,7 @@ import React from 'react';
 import {Route, Routes} from 'react-router-dom';
 import AppRoutes from './AppRoutes';
 import './custom.css';
+import NavMenu from './components/nav/NavMenu';
 
 const App = () => {
   return (

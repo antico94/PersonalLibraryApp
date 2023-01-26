@@ -1,6 +1,7 @@
 
-import Login from './components/login/login';
+
 import FirstPage from "./../src/pages/home/home"
+import LoginPage from './../src/pages/login-page/LoginPage';
 
 const AppRoutes = [
     {
@@ -9,7 +10,7 @@ const AppRoutes = [
     },
     {
         path: '/login',
-        element: <Login/>
+        element: <LoginPage/>
     },
     // {
     //     path: '/fetch-data',
