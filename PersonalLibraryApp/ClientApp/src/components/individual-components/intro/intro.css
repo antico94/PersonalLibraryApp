@@ -16,14 +16,14 @@
   color: white;
 }
 
-.homePage{
+.introPage{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.homePageInner {
+.introPageInner {
   position: relative;
   margin: 2rem;
   padding: 2.5rem;
@@ -31,10 +31,10 @@
   font-size: 1rem;
   border: 0.25rem solid black;
 }
-.homePageInner::-webkit-scrollbar {
+.introPageInner::-webkit-scrollbar {
   width: 0.5rem;
 }
-.homePageInner::-webkit-scrollbar-thumb {
+.introPageInner::-webkit-scrollbar-thumb {
   border: 0.25rem solid #000;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .flower:hover {
-  content: url(../../assets/images/flower/blue_Flower.png);
+  content: url(../../../assets/images/flower/blue_Flower.png);
 }
 
 .excerpt {
@@ -57,9 +57,9 @@
   background: white;
 }
 
-.homePageInner h1,
-.homePageInner h2,
-.homePageInner h3 {
+.introPageInner h1,
+.introPageInner h2,
+.introPageInner h3 {
   font-weight: 400;
   text-align: center;
   color: var(--main-blue)
@@ -81,7 +81,7 @@
     color: var(--main-blue)
 }
 
-.homePageInner h2 {
+.introPageInner h2 {
   margin-top: 1rem;
   font-size: 1.25rem;
   line-height: 2rem;
@@ -89,7 +89,7 @@
     color: var(--main-blue)
 }
 
-.homePageInner h3 {
+.introPageInner h3 {
   width: 15rem;
   margin: 3rem 0 6rem 0;
   padding: 0.5rem;
@@ -102,26 +102,26 @@
     color: var(--main-blue)
 }
 
-.homePageInner p {
+.introPageInner p {
   text-align: justify;
   margin: 1rem 0;
   line-height: 1.5rem;
 
 }
-.homePageInner p:first-of-type:first-letter {
+.introPageInner p:first-of-type:first-letter {
   padding: 0.25rem;
   margin: -1rem 0.25rem -0.25rem 0;
   font-family: "Fleur De Leah", cursive;
   font-size: 3rem;
 }
-.homePageInner p:first-of-type {
+.introPageInner p:first-of-type {
   font-size: 1.25rem;
   line-height: 2rem;
   font-style: italic;
   margin-bottom: 2rem;
 }
 
-.homePageInner p:hover {
+.introPageInner p:hover {
   color: var(--main-blue);
 }
 

@@ -1,0 +1,65 @@
+.homePageInner {
+    display: grid;
+    grid-template-columns: 20vw 50vw 20vw;
+    grid-template-rows: 40vh 25vh 40vh;
+    row-gap: 25px;
+    column-gap: 50px;
+    grid-template-areas:
+"topLeft topMiddle topRight"
+"botLeft botMiddle botRight";
+    justify-content: center;
+    align-content: center;
+}
+
+.topMiddle {
+    grid-area: topMiddle;
+    width: 50vw;
+    height: 25vh;
+}
+
+.botMiddle {
+    grid-area: botMiddle;
+    width: 50vw;
+    height: 75vh;
+}
+
+
+.topLeft {
+    grid-area: topLeft;
+    width: 20vw;
+    height: 40vh;
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+    left: 0;
+}
+
+.botLeft {
+    grid-area: botLeft;
+    width: 20vw;
+    height: 40vh;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+}
+
+.topRight {
+    grid-area: topRight;
+    width: 20vw;
+    height: 40vh;
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+    right: 0;
+}
+
+.botRight {
+    grid-area: botRight;
+    width: 20vw;
+    height: 40vh;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+}

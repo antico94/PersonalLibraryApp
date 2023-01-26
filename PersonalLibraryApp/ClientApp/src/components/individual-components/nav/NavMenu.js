@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './NavMenu.css';
-import WhiteLogo from '../../assets/images/logo/white_logo.png';
+import WhiteLogo from '../../../assets/images/logo/white_logo.png';
 import NiceSearch from '../nice-search/NiceSearch';
 import { useNavigate } from 'react-router-dom';
 

@@ -2149,10 +2149,10 @@ example:
 ### Building for Relative Paths
 
 By default, Create React App produces a build assuming your app is hosted at the server root.<br>
-To override this, specify the `homepage` in your `package.json`, for example:
+To override this, specify the `introPage` in your `package.json`, for example:
 
 ```js
-  "homepage": "http://mywebsite.com/relativepath",
+  "introPage": "http://mywebsite.com/relativepath",
 ```
 
 This will let Create React App correctly infer the root path to use in the generated HTML file.
@@ -2175,7 +2175,7 @@ If you are not using the HTML5 `pushState` history API or not using client-side 
 specify the URL from which your app will be served. Instead, you can put this in your `package.json`:
 
 ```js
-  "homepage": ".",
+  "introPage": ".",
 ```
 
 This will make sure that all the asset paths are relative to `index.html`. You will then be able to move your app
@@ -2257,18 +2257,18 @@ For more information see [Add Firebase to your JavaScript Project](https://fireb
 
 > Note: this feature is available with `react-scripts@0.2.0` and higher.
 
-#### Step 1: Add `homepage` to `package.json`
+#### Step 1: Add `introPage` to `package.json`
 
 **The step below is important!**<br>
 **If you skip it, your app will not deploy correctly.**
 
-Open your `package.json` and add a `homepage` field:
+Open your `package.json` and add a `introPage` field:
 
 ```js
-  "homepage": "https://myusername.github.io/my-app",
+  "introPage": "https://myusername.github.io/my-app",
 ```
 
-Create React App uses the `homepage` field to determine the root URL in the built HTML file.
+Create React App uses the `introPage` field to determine the root URL in the built HTML file.
 
 #### Step 2: Install `gh-pages` and add `deploy` to `scripts` in `package.json`
 
@@ -2458,7 +2458,7 @@ with [.env](#adding-development-environment-variables-in-env).
  HOST                |   :white_check_mark:   |        :x:         | By default, the development web server binds to `localhost`. You may use this variable to specify a different host.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
  PORT                |   :white_check_mark:   |        :x:         | By default, the development web server will attempt to listen on port 3000 or prompt you to attempt the next available port. You may use this variable to specify a different port.                                                                                                                                                                                                                                                                                                                                                                                                                                     
  HTTPS               |   :white_check_mark:   |        :x:         | When set to `true`, Create React App will run the development server in `https` mode.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
- PUBLIC_URL          |          :x:           | :white_check_mark: | Create React App assumes your application is hosted at the serving web server's root or a subpath as specified in [`package.json` (`homepage`)](#building-for-relative-paths). Normally, Create React App ignores the hostname. You may use this variable to force assets to be referenced verbatim to the url you provide (hostname included). This may be particularly useful when using a CDN to host your application.                                                                                                                                                                                              
+ PUBLIC_URL          |          :x:           | :white_check_mark: | Create React App assumes your application is hosted at the serving web server's root or a subpath as specified in [`package.json` (`introPage`)](#building-for-relative-paths). Normally, Create React App ignores the hostname. You may use this variable to force assets to be referenced verbatim to the url you provide (hostname included). This may be particularly useful when using a CDN to host your application.                                                                                                                                                                                              
  CI                  | :large_orange_diamond: | :white_check_mark: | When set to `true`, Create React App treats warnings as failures in the build. It also makes the test runner non-watching. Most CIs set this flag by default.                                                                                                                                                                                                                                                                                                                                                                                                                                                           
  REACT_EDITOR        |   :white_check_mark:   |        :x:         | When an app crashes in development, you will see an error overlay with clickable stack trace. When you click on it, Create React App will try to determine the editor you are using based on currently running processes, and open the relevant source file. You can [send a pull request to detect your editor of choice](https://github.com/facebookincubator/create-react-app/issues/2636). Setting this environment variable overrides the automatic detection. If you do it, make sure your systems [PATH](https://en.wikipedia.org/wiki/PATH_(variable)) environment variable points to your editor’s bin folder. 
  CHOKIDAR_USEPOLLING |   :white_check_mark:   |        :x:         | When set to `true`, the watcher runs in polling mode, as necessary inside a VM. Use this option if `npm start` isn't detecting changes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

@@ -1,6 +1,6 @@
 import React from 'react';
-import Login from '../../components/login/login';
-import NavMenu from '../../components/nav/NavMenu';
+import Login from '../../components/individual-components/login/login';
+import NavMenu from '../../components/individual-components/nav/NavMenu';
 import './loginPage.css'
 
 const LoginPage = () => {
