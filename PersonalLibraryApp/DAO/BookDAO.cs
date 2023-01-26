@@ -2,11 +2,11 @@
 using TrainingEntity.Data;
 using TrainingEntity.Models;
 
-public class BookDao : ISearch
+public class BookDAO : ISearch
 {
     private readonly TrainingEntityContext _context;
 
-    public BookDao(TrainingEntityContext dbContext)
+    public BookDAO(TrainingEntityContext dbContext)
     {
         _context = dbContext;
     }

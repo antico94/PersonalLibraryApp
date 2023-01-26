@@ -2,11 +2,11 @@
 using TrainingEntity.Data;
 using TrainingEntity.Models;
 
-public class GenreDao: ISearch
+public class GenreDAO: ISearch
 {
     private readonly TrainingEntityContext _context;
 
-    public GenreDao(TrainingEntityContext dbContext)
+    public GenreDAO(TrainingEntityContext dbContext)
     {
         _context = dbContext;
     }
