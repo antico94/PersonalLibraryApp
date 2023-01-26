@@ -46,7 +46,8 @@ const Login = () => {
       <div className="login">
         <div className="main">
           <div className="container a-container" ref={aContainer}>
-            <form className="form" id="a-form" method="" action="src/components/individual-components/login">
+            <form className="form" id="a-form" method=""
+                  action="src/components/individual-components/login">
               <h2 className="form_title title">Create Account</h2>
               <div className="form__icons">
                 <img className="form__icon" src={fb} alt="Facebook_Logo"/>
@@ -62,7 +63,8 @@ const Login = () => {
             </form>
           </div>
           <div className="container b-container" ref={bContainer}>
-            <form className="form" id="b-form" method="" action="src/components/individual-components/login">
+            <form className="form" id="b-form" method=""
+                  action="src/components/individual-components/login">
               <h2 className="form_title title">Sign in to Website</h2>
               <div className="form__icons">
                 <img className="form__icon" src={fb} alt="Facebook_Logo"/>

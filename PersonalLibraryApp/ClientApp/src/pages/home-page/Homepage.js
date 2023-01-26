@@ -2,16 +2,16 @@ import React from 'react';
 import './Homepage.css';
 import NavMenu from '../../components/individual-components/nav/NavMenu';
 import BotRight
-  from '../../components/homepage-components/BottomRightSide/BottomRight';
+  from '../../components/homepage-components/RightBottom/BottomRight';
 import TopRight
-  from '../../components/homepage-components/TopRIghtSide/TopRight';
+  from '../../components/homepage-components/RIghtTop/TopRight';
 import BotMiddle
-  from '../../components/homepage-components/BottomMiddle/BottomMiddle';
+  from '../../components/homepage-components/MiddleBottom/BottomMiddle';
 import TopMiddle
-  from '../../components/homepage-components/TopMiddle/TopMiddle';
+  from '../../components/homepage-components/MiddleTop/TopMiddle';
 import BotLeft
-  from '../../components/homepage-components/BottomLeftSide/BotLeft';
-import TopLeft from '../../components/homepage-components/TopLeftSide/TopLeft';
+  from '../../components/homepage-components/LeftBottom/BotLeft';
+import TopLeft from '../../components/homepage-components/LeftTop/TopLeft';
 
 const Homepage = () => {
   return (

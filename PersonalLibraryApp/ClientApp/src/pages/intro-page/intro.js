@@ -1,6 +1,6 @@
 import React from 'react';
-import Intro from "../../components/individual-components/intro/intro"
-import NavMenu from "../../components/individual-components/nav/NavMenu"
+import Intro from '../../components/individual-components/intro/intro';
+import NavMenu from '../../components/individual-components/nav/NavMenu';
 
 const IntroPage = () => {
   return (

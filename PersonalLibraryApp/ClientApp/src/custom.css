@@ -1,5 +1,5 @@
 :root {
-  --main-blue: #4b6fdb;
+    --main-blue: #4b6fdb;
 }
 
 *, *::after, *::before {
@@ -9,6 +9,6 @@
     user-select: none;
 }
 
-html{
-  overflow-x: hidden;
+html {
+    overflow-x: hidden;
 }

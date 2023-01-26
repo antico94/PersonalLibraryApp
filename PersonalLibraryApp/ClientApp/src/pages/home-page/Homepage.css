@@ -2,8 +2,8 @@
     display: grid;
     grid-template-columns: 20vw 50vw 20vw;
     grid-template-rows: 40vh 25vh 40vh;
-    row-gap: 25px;
-    column-gap: 50px;
+    row-gap: 0px;
+    column-gap: 10px;
     grid-template-areas:
 "topLeft topMiddle topRight"
 "botLeft botMiddle botRight";
@@ -14,13 +14,14 @@
 .topMiddle {
     grid-area: topMiddle;
     width: 50vw;
-    height: 25vh;
+    height: 20vh;
 }
 
 .botMiddle {
     grid-area: botMiddle;
     width: 50vw;
-    height: 75vh;
+    height: 100%;
+    max-height: 600px;
 }
 
 
@@ -32,6 +33,8 @@
     z-index: 1;
     top: 50px;
     left: 0;
+    margin-left: 50px;
+
 }
 
 .botLeft {
@@ -40,8 +43,9 @@
     height: 40vh;
     position: fixed;
     z-index: 1;
-    bottom: 0;
+    bottom: 100px;
     left: 0;
+    margin-left: 50px;
 }
 
 .topRight {
@@ -52,6 +56,7 @@
     z-index: 1;
     top: 50px;
     right: 0;
+    margin-right: 50px;
 }
 
 .botRight {
@@ -60,6 +65,7 @@
     height: 40vh;
     position: fixed;
     z-index: 1;
-    bottom: 0;
+    bottom: 100px;
     right: 0;
+    margin-right: 50px;
 }

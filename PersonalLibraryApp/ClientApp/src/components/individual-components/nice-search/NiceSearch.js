@@ -1,9 +1,9 @@
 import {useEffect, useRef, useState} from 'react';
-import './search.css'
+import './search.css';
 
 const SearchInput = () => {
   const searchInput = useRef(null);
-  const [searchValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState('');
   const [isFocused, setIsFocused] = useState(false);
 
   useEffect(() => {
@@ -23,28 +23,28 @@ const SearchInput = () => {
   }
 
   return (
-    <div className="niceSearch">
-      <div className="niceSearch-inner">
-        <label
-          className={
-            searchValue.length > 0 || isFocused
-              ? "active"
-              : "search"
-          }
-          htmlFor="input_search"
-        >
-          <input
-            ref={searchInput}
-            id="input_search"
-            type="text"
-            onChange={handleChange}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
-          />
-        </label>
+      <div className="niceSearch">
+        <div className="niceSearch-inner">
+          <label
+              className={
+                searchValue.length > 0 || isFocused
+                    ? 'active'
+                    : 'search'
+              }
+              htmlFor="input_search"
+          >
+            <input
+                ref={searchInput}
+                id="input_search"
+                type="text"
+                onChange={handleChange}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+            />
+          </label>
+        </div>
       </div>
-    </div>
   );
 };
 
-export default SearchInput
+export default SearchInput;

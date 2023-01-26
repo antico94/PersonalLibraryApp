@@ -1,18 +1,18 @@
 import React from 'react';
 import './intro.css';
-import blueFlower from '../../../assets/images/flower/blue_Flower.png'
-import blackFlower from '../../../assets/images/flower/black_Flower.png'
+import blackFlower from '../../../assets/images/flower/black_Flower.png';
 
 const Intro = () => {
   return (
-      <div className='introPage'>
+      <div className="introPage">
         <div className="introPageInner">
           <div className="excerpt">
             <div className="title__container">
               <h1 className="title__first">Personal</h1>
               <h1 className="title__second">Library</h1>
 
-              <img className="flower" src={blackFlower} alt="flower silhouette"/>
+              <img className="flower" src={blackFlower}
+                   alt="flower silhouette"/>
               <h2>by Andrei Meiu</h2>
               <h3>A "short" introduction</h3>
             </div>

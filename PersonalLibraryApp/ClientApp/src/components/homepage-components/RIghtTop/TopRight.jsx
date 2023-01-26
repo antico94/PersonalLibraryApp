@@ -1,11 +1,12 @@
 import React from 'react';
-import './TopRight.css'
+import './TopRight.css';
 
 const TopRight = () => {
   return (
-      <div className='topRight'>
+      <div className="topRight">
 
-                  <h1>TopRight</h1>
+        <h1>Probably an AD</h1>
+
 
       </div>
   );
