@@ -20,6 +20,7 @@ const NavMenu = () => {
         <div className="header">
           <div className="header-menu">
             <img className="logo" src={WhiteLogo} alt={'logo'} onClick={handleLogoClick}/>
+            <Link className="navBarLink" tag={Link} to="/intro">Intro</Link>
             <Link className="navBarLink" tag={Link} to="/">Book finder</Link>
             <Link className="navBarLink" tag={Link} to="/">Popular</Link>
             <Link className="navBarLink" tag={Link} to="/">Portfolio</Link>

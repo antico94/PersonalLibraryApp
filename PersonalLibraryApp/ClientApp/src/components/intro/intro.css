@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 ::-moz-selection {
   background: black;
   color: white;
@@ -15,7 +16,14 @@
   color: white;
 }
 
-.homePage {
+.homePage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePageInner {
   position: relative;
   margin: 2rem;
   padding: 2.5rem;
@@ -23,10 +31,10 @@
   font-size: 1rem;
   border: 0.25rem solid black;
 }
-homePage::-webkit-scrollbar {
+.homePageInner::-webkit-scrollbar {
   width: 0.5rem;
 }
-homePage::-webkit-scrollbar-thumb {
+.homePageInner::-webkit-scrollbar-thumb {
   border: 0.25rem solid #000;
 }
 
@@ -38,6 +46,10 @@ homePage::-webkit-scrollbar-thumb {
   shape-margin: 2rem;
 }
 
+.flower:hover {
+  content: url(../../assets/images/flower/blue_Flower.png);
+}
+
 .excerpt {
   margin: 0 auto;
   columns: 22rem auto;
@@ -45,11 +57,12 @@ homePage::-webkit-scrollbar-thumb {
   background: white;
 }
 
-.homePage h1,
-.homePage h2,
-.homePage h3 {
+.homePageInner h1,
+.homePageInner h2,
+.homePageInner h3 {
   font-weight: 400;
   text-align: center;
+  color: var(--main-blue)
 }
 
 .title__first {
@@ -59,21 +72,24 @@ homePage::-webkit-scrollbar-thumb {
   font-size: 2.5rem;
   font-style: italic;
   text-align: left;
+    color: var(--main-blue)
 }
 
 .title__second {
   font-size: 5rem;
   text-align: left;
+    color: var(--main-blue)
 }
 
-.homePage h2 {
+.homePageInner h2 {
   margin-top: 1rem;
   font-size: 1.25rem;
   line-height: 2rem;
   font-style: italic;
+    color: var(--main-blue)
 }
 
-.homePage h3 {
+.homePageInner h3 {
   width: 15rem;
   margin: 3rem 0 6rem 0;
   padding: 0.5rem;
@@ -83,22 +99,58 @@ homePage::-webkit-scrollbar-thumb {
   font-style: italic;
   border-top: solid 0.15rem black;
   border-bottom: solid 0.15rem black;
+    color: var(--main-blue)
 }
 
-.homePage p {
+.homePageInner p {
   text-align: justify;
   margin: 1rem 0;
   line-height: 1.5rem;
+
 }
-.homePage p:first-of-type:first-letter {
+.homePageInner p:first-of-type:first-letter {
   padding: 0.25rem;
   margin: -1rem 0.25rem -0.25rem 0;
   font-family: "Fleur De Leah", cursive;
   font-size: 3rem;
 }
-.homePage p:first-of-type {
+.homePageInner p:first-of-type {
   font-size: 1.25rem;
   line-height: 2rem;
   font-style: italic;
   margin-bottom: 2rem;
+}
+
+.homePageInner p:hover {
+  color: var(--main-blue);
+}
+
+
+
+.btn {
+  width: 15rem;
+  height: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #d1deff;;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+.btn__secondary {
+  color: black;
+}
+.btn__secondary:hover {
+  color: white;
+    background-color: #4b6fdb;
+}
+.btn__secondary:active {
+  box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem white;
+}
+.btn p {
+  font-size: 1.6rem;
 }

@@ -45,6 +45,10 @@
     margin-right: 50px;
 }
 
+.navBarLink:hover{
+  color: #4b6fdb;
+}
+
 
 .header-icons {
     /*border: 1px solid red;*/

@@ -1,21 +1,20 @@
-
-
-import FirstPage from "./../src/pages/home/home"
 import LoginPage from './../src/pages/login-page/LoginPage';
+import IntroPage from './pages/intro-page/intro';
+import HomePage from './pages/home-page/home'
 
 const AppRoutes = [
     {
         index: true,
-        element: <FirstPage/>
+        element: <HomePage/>
     },
     {
         path: '/login',
         element: <LoginPage/>
     },
-    // {
-    //     path: '/fetch-data',
-    //     element: <FetchData/>
-    // }
+    {
+        path: '/intro',
+        element: <IntroPage/>
+    }
 ];
 
 export default AppRoutes;
