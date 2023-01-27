@@ -5,7 +5,7 @@ const TopMiddle = () => {
   return (
       <div className="topMiddle">
 
-        <h1>TopMiddle</h1>
+        <h1>TopMiddle Component</h1>
         <h3>Create post</h3>
       </div>
   );

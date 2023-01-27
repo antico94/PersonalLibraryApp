@@ -1,21 +1,8 @@
 import PostInFeed from './../classes/PostInFeed'
+import generateAuthorName from './name-generator';
+import {PostType} from '../enums/post-type';
 
-const PostType = {
-	Achievement: "Achievement",
-	Regular: "Regular",
-	Ad: "Ad",
-	Update: "Update"
-}
 const postTypesValues = Object.values(PostType);
-const firstNames = ["Emma", "Olivia", "Ava", "Isabella", "Sophia", "Mia", "Charlotte", "Amelia", "Harper", "Evelyn"];
-const lastNames = ["Smith", "Johnson", "Williams", "Jones", "Brown", "Davis", "Miller", "Wilson", "Moore", "Taylor"];
-
-const generateAuthorName = () => {
-  let firstName = firstNames[Math.floor(Math.random() * firstNames.length)];
-  let lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
-
-  return `${firstName} ${lastName}`;
-}
 
 const  generatePosts = (n) => {
   const posts = [];

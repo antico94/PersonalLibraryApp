@@ -1,7 +1,7 @@
 .homePageInner {
     display: grid;
     grid-template-columns: 20vw 50vw 20vw;
-    grid-template-rows: 40vh 25vh 40vh;
+    grid-template-rows: 20vh 80vh;
     row-gap: 0px;
     column-gap: 10px;
     grid-template-areas:
@@ -13,15 +13,20 @@
 
 .topMiddle {
     grid-area: topMiddle;
-    width: 50vw;
     height: 20vh;
+    width: 50vw;
+    position: relative;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .botMiddle {
+    position: relative;
     grid-area: botMiddle;
     width: 50vw;
     height: 100%;
-    max-height: 600px;
+    grid-row-start: 3;
+    top: -80vh;
 }
 
 

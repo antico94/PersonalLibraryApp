@@ -3,7 +3,7 @@ import './post.css'
 
 const FeedPost = ({ post }) => {
   return (
-    <div>
+    <div className={`feedPost ${post.PostType}`}>
       <div>
         <strong>{post.PostAuthor}</strong>
         <span>{post.PostType}</span>
