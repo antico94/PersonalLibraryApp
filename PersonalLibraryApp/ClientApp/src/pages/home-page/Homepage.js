@@ -1,5 +1,6 @@
 import React from 'react';
 import './Homepage.css';
+import generatePosts from './../../utils/utils'
 import NavMenu from '../../components/individual-components/nav/NavMenu';
 import BotRight
   from '../../components/homepage-components/RightBottom/BottomRight';
@@ -14,6 +15,7 @@ import BotLeft
 import TopLeft from '../../components/homepage-components/LeftTop/TopLeft';
 
 const Homepage = () => {
+  let posts = generatePosts(30)
   return (
       <div className="homePageOuter">
         <NavMenu/>
@@ -22,7 +24,7 @@ const Homepage = () => {
           <TopLeft/>
           <BotLeft/>
           <TopMiddle/>
-          <BotMiddle/>
+          <BotMiddle posts={posts}/>
           <TopRight/>
           <BotRight/>
         </div>
