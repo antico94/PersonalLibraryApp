@@ -1,7 +1,99 @@
 .topMiddle {
-    border: 3px solid green;
+    border: 1px solid lightgrey;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     flex-direction: column;
+    width: 540px;
+    height: 116px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#topSection {
+    height: 48px;
+    width: 100%;
+}
+
+
+#avatarTopMiddle {
+    position: relative;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#buttonTopMiddle {
+    cursor: pointer;
+    position: relative;
+    width: calc(100% - 58px);
+    height: 48px;
+    top: -20px;
+    border-radius: 30px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    text-align: left;
+    padding-left: 15px;
+    color: grey;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+#buttonTopMiddle:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+
+#botSection {
+    height: 48px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: grey;
+}
+
+#botSection div {
+    /*border: 1px solid black;*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 5px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 0;
+}
+
+
+
+#botSection div:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+#botSection div svg{
+    margin-right: 10px;
+}
+
+
+#photoSection svg {
+    filter: invert(46%) sepia(100%) saturate(1313%) hue-rotate(189deg) brightness(94%) contrast(93%);
+}
+
+#videoSection svg{
+    filter: invert(17%) sepia(82%) saturate(7015%) hue-rotate(358deg) brightness(102%) contrast(112%);
+}
+
+#eventSection svg{
+    filter: invert(57%) sepia(27%) saturate(927%) hue-rotate(56deg) brightness(89%) contrast(82%);
+}
+
+#articleSection svg{
+    filter: invert(64%) sepia(49%) saturate(4476%) hue-rotate(331deg) brightness(92%) contrast(92%);
 }

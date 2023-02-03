@@ -3,7 +3,7 @@ import './post.css'
 
 const FeedPost = ({ post }) => {
   return (
-    <div className={`feedPost ${post.PostType}`}>
+    <div className={`feedPost ${post.PostType} ${post.HasImage ? 'postWithImage' : 'postWithoutImage'}`}>
       <div>
         <strong>{post.PostAuthor}</strong>
         <span>{post.PostType}</span>
