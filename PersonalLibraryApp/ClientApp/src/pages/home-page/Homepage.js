@@ -13,6 +13,7 @@ import TopMiddle
 import BotLeft
     from '../../components/homepage-components/LeftBottom/BotLeft';
 import TopLeft from '../../components/homepage-components/LeftTop/TopLeft';
+import SortBar from "../../components/homepage-components/SortBar/SortBar";
 
 
 const Homepage = () => {
