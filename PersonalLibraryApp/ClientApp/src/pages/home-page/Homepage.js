@@ -3,17 +3,17 @@ import './Homepage.css';
 import generatePosts from './../../utils/utils'
 import NavMenu from '../../components/individual-components/nav/NavMenu';
 import BotRight
-    from '../../components/homepage-components/RightBottom/BottomRight';
+    from '../../components/homepage-components/right-bottom/BottomRight';
 import TopRight
-    from '../../components/homepage-components/RIghtTop/TopRight';
+    from '../../components/homepage-components/right-top/TopRight';
 import BotMiddle
-    from '../../components/homepage-components/MiddleBottom/BottomMiddle';
+    from '../../components/homepage-components/middle-bottom/BottomMiddle';
 import TopMiddle
-    from '../../components/homepage-components/MiddleTop/TopMiddle';
+    from '../../components/homepage-components/middle-top/TopMiddle';
 import BotLeft
-    from '../../components/homepage-components/LeftBottom/BotLeft';
-import TopLeft from '../../components/homepage-components/LeftTop/TopLeft';
-import SortBar from "../../components/homepage-components/SortBar/SortBar";
+    from '../../components/homepage-components/left-bottom/BotLeft';
+import TopLeft from '../../components/homepage-components/left-top/TopLeft';
+import SortBar from "../../components/homepage-components/sort-bar/SortBar";
 
 
 const Homepage = () => {
