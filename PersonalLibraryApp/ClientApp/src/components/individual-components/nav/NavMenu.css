@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-:root {
-    --border-color: #ececeb;;
-    --inactive-color: rgb(102, 102, 102);
-    --body-font: "Poppins", sans-serif;
-    --background-search-bg: rgb(238, 243, 248)
-}
-
 
 .navBar {
     position: fixed;
@@ -124,7 +117,6 @@
 }
 
 
-
 .navLinks div:hover {
     cursor: pointer;
 }
@@ -133,9 +125,12 @@
     color: black;
 }
 
+
+
 .navLinks div:hover .navLinksImages {
     filter: none;
 }
+
 
 .navLinks div a {
     text-decoration: none;
@@ -143,7 +138,7 @@
     font-size: 13px;
 }
 
-.navProfile #navProfileDownArrow{
+.navProfile #navProfileDownArrow {
     position: absolute;
     width: 15px;
     height: 15px;
@@ -151,6 +146,6 @@
     right: -12px;
 }
 
-#navLinkImageNoFilter{
+#navLinkImageNoFilter {
     filter: none;
 }

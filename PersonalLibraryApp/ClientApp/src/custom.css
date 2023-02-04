@@ -1,5 +1,8 @@
 :root {
-    --main-blue: #4b6fdb;
+    --border-color: #ececeb;;
+    --inactive-color: rgb(102, 102, 102);
+    --body-font: "Poppins", sans-serif;
+    --background-search-bg: rgb(238, 243, 248)
 }
 
 *, *::after, *::before {
