@@ -6,6 +6,8 @@
 }
 
 .right {
+    background-color: white;
+
     margin-top: 70px;
     position: fixed;
     width: 225px;
@@ -15,6 +17,8 @@
 }
 
 .middle {
+    background-color: white;
+
     width: 540px;
     margin: 70px 100px 0 100px
 }
@@ -25,6 +29,8 @@
     height: 540px;
     width: 225px;
     left: calc(50% - 540px);
+    background-color: white;
+
 }
 
 .topLeft {

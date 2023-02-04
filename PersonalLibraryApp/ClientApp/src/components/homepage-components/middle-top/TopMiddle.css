@@ -1,4 +1,9 @@
+:root {
+    --custom-font: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif
+}
+
 .topMiddle {
+    font-family: var(--custom-font);
     border: 1px solid lightgrey;
     display: flex;
     justify-content: center;
@@ -8,6 +13,7 @@
     height: 116px;
     border-radius: 10px;
     padding: 10px;
+    font-weight: 500;
 }
 
 #topSection {
@@ -39,7 +45,6 @@
     padding-left: 15px;
     color: grey;
     font-size: 15px;
-    font-weight: bold;
 }
 
 
@@ -67,9 +72,12 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-weight: 0;
+    font-weight: 500;
 }
 
+#botSection div:not(:last-child) {
+    margin-right: 50px;
+}
 
 
 #botSection div:hover {
@@ -77,7 +85,8 @@
     background-color: rgba(0, 0, 0, 0.08);
 }
 
-#botSection div svg{
+
+#botSection div svg {
     margin-right: 10px;
 }
 
@@ -86,14 +95,14 @@
     filter: invert(46%) sepia(100%) saturate(1313%) hue-rotate(189deg) brightness(94%) contrast(93%);
 }
 
-#videoSection svg{
+#videoSection svg {
     filter: invert(17%) sepia(82%) saturate(7015%) hue-rotate(358deg) brightness(102%) contrast(112%);
 }
 
-#eventSection svg{
+#eventSection svg {
     filter: invert(57%) sepia(27%) saturate(927%) hue-rotate(56deg) brightness(89%) contrast(82%);
 }
 
-#articleSection svg{
+#articleSection svg {
     filter: invert(64%) sepia(49%) saturate(4476%) hue-rotate(331deg) brightness(92%) contrast(92%);
 }
